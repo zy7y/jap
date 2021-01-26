@@ -10,7 +10,7 @@ const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup')
 module.exports = async function() {
   console.log(chalk.green('测试开始>打开浏览器...'))
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true, // 无头模式
     slowMo:500, //slow down by 250ms, 减慢运行的速度，更好的看清楚操作
     browserContext: 'incognito', // 无痕模式
   })

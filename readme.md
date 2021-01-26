@@ -11,6 +11,7 @@ jest + puppeteer + allure E2E测试基础目录(jest puppeteer allure 初步集�
 **4/5选一个就可以了**
 4. allure serve  # 查看报告
 5. allure generate # 本地生成报告
+6. 若需要有浏览器页面测试，请修改`setup.js`中`headless: true, // 无头模式` ,`true`修改为`false`即可
 
 # 报告
 ![](https://gitee.com/zy7y/blog_images/raw/master/img/20210126191747.png)
@@ -18,11 +19,3 @@ jest + puppeteer + allure E2E测试基础目录(jest puppeteer allure 初步集�
 https://blog.csdn.net/maggie_1212/article/details/107015198
 https://www.jestjs.cn/docs/puppeteer
 https://www.npmjs.com/package/jest-allure
-
-
-# 目前问题
-- 无头模式下:
->Execution context was destroyed, most likely because of a navigation.
-
-- 有头模式下:
->UnhandledPromiseRejectionWarning: Error: Navigation failed because browser has disconnected!

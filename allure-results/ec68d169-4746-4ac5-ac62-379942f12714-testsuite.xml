@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611671072719' stop='1611671073953'>
+    <name>jest + allure + puppeteer调试</name>
+    <title>jest + allure + puppeteer调试</title>
+    <test-cases>
+        <test-case start='1611671072775' status='passed' stop='1611671073952'>
+            <name>是否能正常访问zy7y的博客园</name>
+            <title>是否能正常访问zy7y的博客园</title>
+            <labels>
+                <label name='story' value='开网页测试组'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1611671072775' status='passed' stop='1611671073673'>
+                    <name>1. 浏览器输入: https://www.cnblogs.com/zy7y ,并访问.</name>
+                    <title>1. 浏览器输入: https://www.cnblogs.com/zy7y ,并访问.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1611671073673' status='passed' stop='1611671073682'>
+                    <name>2. 获取当前页面所有文本内容.</name>
+                    <title>2. 获取当前页面所有文本内容.</title>
+                    <attachments>
+                        <attachment title='zy7y博客园首页内容(文字)' source='526dd98b-fa62-46fb-8d09-ce19cfa80f00-attachment.txt' type='text/plain' size='20873'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611671073682' status='passed' stop='1611671073950'>
+                    <name>3. 对当前页面截图</name>
+                    <title>3. 对当前页面截图</title>
+                    <attachments>
+                        <attachment title='zy7y博客园首页' source='13b6c6bc-b22d-478f-a63d-26760d2afb5f-attachment.png' type='image/png' size='128257'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611671073950' status='passed' stop='1611671073951'>
+                    <name>4. 断言，当前页面是否包含字符串 博客园</name>
+                    <title>4. 断言，当前页面是否包含字符串 博客园</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>测试描述：在网络正常的情况下访问zy7y博客园主页: https://www.cnblogs.com/zy7y</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
