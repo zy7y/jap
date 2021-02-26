@@ -1,5 +1,6 @@
 # 说明
 jest + puppeteer + allure E2E测试基础目录(jest puppeteer allure 初步集成)
+**本机需要安装allure环境，配置好环境变量 [allure配置参考](https://www.cnblogs.com/zy7y/p/13388807.html)**
 # 实现
 1. allure报告
 2. jest(保证测试过程中只有一个浏览器对象)
